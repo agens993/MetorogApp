@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="src/styles.css"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+    <title>Meteorog App</title>
+  </head>
+  <body>
+    <div class="window">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a City"
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="search-form-submit-button"
+          />
+        </form>
+      </header>
+
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="app-city" id="city"></h1>
+            <p class="app-details">
+              <span id="time"></span> <span id="description"> </span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind"> km/h</strong>
+            </p>
+          </div>
+          <div class="app-temp-container">
+            <div id="icon"></div>
+
+            <div class="app-temp-number" id="temperature"></div>
+            <div class="app-temp-unit">ºC</div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/agens993" target="_blank">
+          Genesis Alvarez</a
+        >
+        is
+        <a
+          href="https://github.com/agens993/SheCodes-FinalHomeworkApp"
+          targe="_blank"
+        >
+          open-sourced on GubHub</a
+        >
+        and
+        <a
+          href="https://github.com/agens993/SheCodes-FinalHomeworkApp.git"
+          target="_blank"
+        >
+          based on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
